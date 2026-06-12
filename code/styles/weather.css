@@ -96,7 +96,12 @@ main{
   flex-direction:column;
   gap:.3rem;
 }
-.weather-cards{
+.hour-weather-cards{
+  display:flex;
+  flex-direction:row;
+  gap:.5rem;
+}
+.weekly-weather-cards{
   display:flex;
   flex-direction:row;
   gap:.5rem;

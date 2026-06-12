@@ -58,7 +58,8 @@ main{
 }
 .city-name{
   color:var(--weather-app-primary-text);
-  font-size: 3rem;
+  font-size: 2.5rem;
+  /* line-height: 3.5rem; */
 }
 .city-time{
   color:var(--weather-app-secondary-text);
@@ -66,7 +67,7 @@ main{
 }
 .city-temperature{
   color:var(--weather-app-temperature);
-  font-size:3rem;
+  font-size:2rem;
 }
 .weather-condition{
   color:var(--weather-app-temperature);
@@ -108,7 +109,7 @@ main{
 }
 
 .one-hour{
-  background:linear-gradient(45deg,#132d41,#233568,#38bdf8);
+  background:linear-gradient(45deg,#206499,#f59e0b);
   border-radius:1rem;
   padding:.5rem;
   text-align:center;
@@ -121,4 +122,18 @@ main{
 h2{
   color:var(--weather-app-primary-text);
   font-size: 2rem;
+}
+.current-wind-humidity{
+  display:flex;
+  flex-direction:row;
+  gap:1.5rem;
+  text-align:center;
+  font-size: 1rem;
+  font-family:inherit;
+  color:var(--weather-app-primary-text)
+
+}
+.city-humidity, .city-wind{
+  display:flex;
+  gap:2px;
 }

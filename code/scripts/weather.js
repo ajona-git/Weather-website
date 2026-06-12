@@ -2,6 +2,9 @@ const cityName = document.querySelector('.city-name');
 const cityTime = document.querySelector('.city-time');
 const cityTemp = document.querySelector('.city-temperature');
 const cityCondition = document.querySelector('.weather-condition');
+const cityWind = document.querySelector('.city-wind-value')
+const cityHumidity = document.querySelector('.city-humidity-value');
+
 
 const hourWeatherCards = document.querySelector('.hour-weather-cards');
 const weeklyWeatherCards = document.querySelector('.weekly-weather-cards');
@@ -65,6 +68,8 @@ const getWeather = async ()=>{
 
     cityTime.textContent = currentTime
     cityTemp.textContent = currentTemperature
+    cityWind.textContent = currentWindSpeed
+    cityHumidity.textContent = currentRelativeHumidity
 
     const temp = data.current.temperature_2m;
 
